@@ -93,4 +93,4 @@ admin.site.register(Post)
 python manage.py createsuperuser
 ```
 
-14. WE ARE HERE 
+14. [WE ARE HERE ON TUTORIAL](https://tutorial.djangogirls.org/en/deploy/)
