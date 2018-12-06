@@ -1,4 +1,5 @@
 # DJANGOGIRLS
+###### v 0.0.0
 is a learning project steps by [Django Girls](https://tutorial.djangogirls.org/en)
 
 ### Steps
@@ -92,5 +93,8 @@ admin.site.register(Post)
 ```
 python manage.py createsuperuser
 ```
-
-14. [WE ARE HERE ON TUTORIAL](https://tutorial.djangogirls.org/en/deploy/)
+14. run server
+```
+python manage.py runserver http://127.0.0.1:8000
+```
+15. [WE ARE HERE ON TUTORIAL](https://tutorial.djangogirls.org/en/deploy/)
