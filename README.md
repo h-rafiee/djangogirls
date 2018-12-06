@@ -95,6 +95,6 @@ python manage.py createsuperuser
 ```
 14. run server
 ```
-python manage.py runserver http://127.0.0.1:8000
+python manage.py runserver 127.0.0.1:8000
 ```
 15. [WE ARE HERE ON TUTORIAL](https://tutorial.djangogirls.org/en/deploy/)
