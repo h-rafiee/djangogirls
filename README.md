@@ -98,4 +98,35 @@ python manage.py createsuperuser
 python manage.py runserver 127.0.0.1:8000
 ```
 15. Deployment on PythonAnyWhere ( [Wiki](https://github.com/h-rafiee/djangogirls/wiki/Deployment-on-PythonAnyWhere) | [DjangoGirls](https://tutorial.djangogirls.org/en/deploy/) )
-16. [WE ARE HERE ON TUTORIAL](https://tutorial.djangogirls.org/en/django_urls/)
+16. create a new route for our blog on `mysite/urls.py`
+```python
+from django.contrib import admin
+from django.urls import path
+from django.urls import include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('blog.urls')),
+]
+```
+17. ok we see we add blog.urls so we need create or edit `blog/urls.py` as 
+```python
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.post_list, name='post_list')
+]
+```
+18. we doesn't have any *post_list* function on views so we need create a one on `blog/views.py`
+```python
+from django.shortcuts import render
+
+# Create your views here.
+def post_list(request):
+        return render(request, 'blog/post_list.html', {})
+```
+19. so we can create a html as *post_list.html* for view in `blog/templates/blog` directory
+20. for add static files [Read this doc](https://docs.djangoproject.com/en/2.1/howto/static-files/)
+21. for deploy on **Pythonanywhere.com** about static files [Read this doc](https://help.pythonanywhere.com/pages/DjangoStaticFiles) ; *I had to copy statics files form ./blog/static/blog to ./static/blog it was easier to me*
+22. [WE ARE HERE ON TUTORIAL](https://tutorial.djangogirls.org/en/django_orm/)
