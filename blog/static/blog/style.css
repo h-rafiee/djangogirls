@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+    background: #f1f1f1;
+    color : #333;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.card-title small {
+    font-size: 13px;
+    font-weight: lighter;
+    color: #666666;
+}
+.card-title {
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
